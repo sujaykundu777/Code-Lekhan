@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CL Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <h2>Code Learner Editor</h2>
+        <div class="toggle">
+            <span class="switch"></span>
+        </div>
+        <h3>Dark Mode</h3>
+
+    </header>
+    <div id="container">
+        <div id="input">
+
+            <div class="box">
+                <label><i id="html" class="fa-brands fa-html5"></i> HTML</label> 
+                <textarea id="html-code" onkeyup="run()"></textarea>
+            </div>
+            <div class="box">
+                <label><i id="css" class="fa-brands fa-css3-alt"></i> CSS</label> 
+                <textarea id="css-code" onkeyup="run()"></textarea>
+            </div>
+            <div class="box">
+                <label><i id="js" class="fa-brands fa-square-js"></i> JavaScript</label> 
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div id="result">
+            <label><i id="out" class="fa-solid fa-play"></i> Priview <i class="fa-solid fa-rotate-right" style="float: right; margin-left: 24px;" onclick="refresh()"></i></label>
+            <iframe name="iframe" id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
