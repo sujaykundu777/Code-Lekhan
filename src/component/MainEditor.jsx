@@ -141,7 +141,7 @@ export default function EditVer02() {
                     <Btn color={'[#ebebeb]'} borderColor={'[#d8c549]'} bgHover={'[#f0db4f] hover:text-[#323330]'} type='js' value='JavaScript' />
                 </div>
 
-                <h1 className='text-2xl w-[33.33%] font-["Comfortaa"] font-normal text-center  tracking-wider'>&lt;/CodeLekhan&gt;</h1>
+                <h1 id='logo' className='text-2xl w-[33.33%] font-comfortaa  font-normal text-center  tracking-wider'>&lt;/CodeLekhan&gt;</h1>
 
                 <div className='flex justify-end w-[33.33%]'>
                     <button onClick={handleDownload} className="py-1 px-3 font-semibold tracking-wide border rounded-xl border-b-4 active:border-b-2 active:mt-0.5">Download Files</button>
