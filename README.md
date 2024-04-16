@@ -14,7 +14,7 @@ To run this project locally, follow these steps:
 1. Clone this repository:
 
 ```
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/AzadNishad/Code-Lekhan.git
 ```
 2. Navigate to the project directory:
 
