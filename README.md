@@ -19,7 +19,7 @@ git clone https://github.com/AzadNishad/Code-Lekhan.git
 2. Navigate to the project directory:
 
 ```
-cd your-repository
+cd Code-Lekhan
 ```
 3. Install dependencies:
 
