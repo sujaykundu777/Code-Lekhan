@@ -133,15 +133,19 @@ export default function EditVer02() {
 
     return (
         <div className='h-screen'>
-            <div className='w-full p-2 bg-slate-800 flex justify-between text-[#ebebeb]'>
+            <div className='w-full p-2 bg-slate-800 flex justify-between items-center text-[#ebebeb]'>
 
-                <div className='flex gap-2'>
+                <div className='flex gap-2  w-[33.33%]'>
                     <Btn color={'[#ebebeb]'} borderColor={'[#e34c26]'} bgHover={'[#f06529]'} type='html' value='HTML' />
                     <Btn color={'[#ebebeb]'} borderColor={'[#264de4]'} bgHover={'[#2965f1]'} type='css' value='CSS' />
                     <Btn color={'[#ebebeb]'} borderColor={'[#d8c549]'} bgHover={'[#f0db4f] hover:text-[#323330]'} type='js' value='JavaScript' />
                 </div>
 
-                <button onClick={handleDownload} className="py-1 px-3 font-semibold tracking-wide border rounded-xl border-b-4 active:border-b-2 active:mt-0.5">Download Files</button>
+                <h1 className='text-2xl w-[33.33%] font-["Comfortaa"] font-normal text-center  tracking-wider'>&lt;/CodeLekhan&gt;</h1>
+
+                <div className='flex justify-end w-[33.33%]'>
+                    <button onClick={handleDownload} className="py-1 px-3 font-semibold tracking-wide border rounded-xl border-b-4 active:border-b-2 active:mt-0.5">Download Files</button>
+                </div>
             </div>
             <div className='h-[90%] flex'>
                 <div className='h-full w-1/2 relative' id='editor'>
