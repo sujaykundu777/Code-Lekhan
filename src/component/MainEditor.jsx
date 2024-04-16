@@ -3,11 +3,73 @@ import Editor from '@monaco-editor/react';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 
-export default function EditVer01() {
+export default function EditVer02() {
     const [activeTextarea, setActiveTextarea] = useState('html');
-    const [htmlCode, setHtmlCode] = useState('ye wala HTML hai');
-    const [cssCode, setCssCode] = useState('ye wala CSS hai');
-    const [jsCode, setJsCode] = useState('ye wala JavaScript hai');
+    const [htmlCode, setHtmlCode] = useState(`<!-- Example of Increment Number -->
+    <h1>Increment Counter</h1>
+    <p>Count: <span id="count">0</span></p>
+    <button onclick="increment()">Increment</button>`);
+    const [cssCode, setCssCode] = useState(` 
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #202125; 
+        color: white; 
+      }
+      
+      h1 {
+        color: #FF9933; 
+        margin-top: 50px;
+      }
+      
+      button {
+        background-color: #FF9933; 
+        color: #202125; 
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 20px #FF9933;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+    
+      button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background-color: rgba(255, 153, 51, 0.2); 
+        border-radius: 50%;
+        z-index: 0;
+        transition: all 0.6s ease-in-out;
+        transform: translate(-50%, -50%);
+      }
+    
+      button:hover {
+        box-shadow: 0 0 40px #FF9933; 
+      }
+    
+      button:hover::before {
+        width: 100%;
+        height: 100%;
+      }`);
+    const [jsCode, setJsCode] = useState(`let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }`);
     const [outputCode, setOutputCode] = useState('');
 
 

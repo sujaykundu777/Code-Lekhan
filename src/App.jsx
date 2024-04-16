@@ -1,10 +1,10 @@
-import EditVer01 from "./component/Editor-0-1"
+import EditVer02 from "./component/MainEditor"
 
 export default function App(){
 
   return (
     <>
-      <EditVer01 />
+      <EditVer02 />
     </>
   )
 }
