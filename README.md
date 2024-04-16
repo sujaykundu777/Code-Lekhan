@@ -39,7 +39,7 @@ Open your browser and visit http://localhost:5173 to see the application running
 3. See the live output in the output iframe.
 4. To download your code files, click on the "Download Files" button.
 ## Credits
-* React
+* React (Vite)
 * Monaco Editor
 * JSZip
 * FileSaver.js
