@@ -6,7 +6,7 @@ This is a simple online code editor built using React, Monaco Editor, and JSZip.
 - View live output in the iframe.
 - Download code files as a ZIP archive.
 ## Demo
-You can access the live demo of this project [here](https://cleditor.azadnishad.live/).
+You can access the live demo of this project [here](https://codelekhan.azadnishad.live/).
 
 ## Installation
 To run this project locally, follow these steps:
