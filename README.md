@@ -5,6 +5,8 @@ This is a simple online code editor built using React, Monaco Editor, and JSZip.
 - Edit HTML, CSS, and JavaScript code in real-time.
 - View live output in the iframe.
 - Download code files as a ZIP archive.
+- Clean the code in one click
+- Preview in new tab (under dev)
 ## Demo
 You can access the live demo of this project [here](https://codelekhan.azadnishad.live/).
 
@@ -39,9 +41,9 @@ Open your browser and visit http://localhost:5173 to see the application running
 3. See the live output in the output iframe.
 4. To download your code files, click on the "Download Files" button.
 ## Credits
-* React (Vite)
-* Monaco Editor
-* JSZip
-* FileSaver.js
+* [React (Vite)](https://vitejs.dev/)
+* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+* [JSZip](https://www.npmjs.com/package/jszip)
+* [FileSaver.js](https://www.npmjs.com/package/file-saver)
 ---
 Feel free to adjust the sections or add any additional information you find necessary!
