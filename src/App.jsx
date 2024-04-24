@@ -1,12 +1,12 @@
-// import EditVer02 from "./component/MainEditor"
 import NewMain from "./component/NewMain"
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App(){
 
   return (
     <>
-      {/* <EditVer02 /> */}
       <NewMain />
+      <Analytics/>
     </>
   )
 }
