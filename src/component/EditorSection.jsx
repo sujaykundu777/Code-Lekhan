@@ -12,6 +12,7 @@ export default function EditorSection({ code, setCode, activeEditor, type}) {
                 value={code}
                 onChange={(value) => setCode(value)}
                 className={` w-1/2 h-full `}
+                loading={<div className='w-10 h-10 border-4 border-gray-500 animate-spin rounded-full border-b-gray-700'/>}
                 options={{
                     minimap: {
                         enabled: false
