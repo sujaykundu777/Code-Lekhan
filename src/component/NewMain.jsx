@@ -106,7 +106,7 @@ export default function EditVer02() {
     </button>
   );
 
-  const Tooltip = ({ text }) => <div className="absolute right-0 -bottom-6 bg-gray-100 text-gray-800 min-w-32 hidden group-hover:block p-0.5 rounded-sm text-xs">{text}</div>
+  const Tooltip = ({ text }) => <div className="absolute z-50 right-0 -bottom-6 bg-gray-100 text-gray-800 min-w-32 hidden group-hover:block p-0.5 rounded-sm text-xs">{text}</div>
 
   return (
     <div className="h-screen">
