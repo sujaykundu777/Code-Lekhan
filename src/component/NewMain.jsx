@@ -146,7 +146,7 @@ export default function EditVer02() {
             <img src={Logo} alt="logo" className="w-24 aspect-video bg-cover" />
           </div>
           <div className="w-[33.33%] flex justify-end items-center gap-2">
-            <button className='relative group p-2 rounded-full hover:bg-gray-400/30 active:-rotate-[360deg] transition-all duration-500 ease-out' onClick={() => setKey(prevKey => prevKey + 1)}>
+            <button className='relative group p-2 rounded-full hover:bg-gray-400/30 transition-all duration-500 ease-out' onClick={() => setKey(prevKey => prevKey + 1)}>
               <Refresh size={{ width: "18px", height: "18px" }} />
               <Tooltip text={'Refresh Output'} />
             </button>
