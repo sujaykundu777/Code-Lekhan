@@ -118,27 +118,31 @@ export default function EditVer02() {
             <TabBtn text="JavaScript" bgStyle="bg-[#F0DB4F] text-[#323330]" type="javascript" />
             <div className='ml-5'>
               <input id="tailwind" type="checkbox" checked={isTailwindChecked} onChange={handleTailwindChange} className="peer hidden" />
-              <label htmlFor='tailwind' className="hidden cursor-pointer peer-checked:block bg-green-200 p-2 rounded-full">
+              <label htmlFor='tailwind' className="relative group hidden cursor-pointer peer-checked:block bg-green-200 p-2 rounded-full">
                 <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
                     style={{ fill: '#44a8b3' }} />
                 </svg>
+                <Tooltip text={'Tailwind (Enabled)'} />
               </label>
-              <label htmlFor='tailwind' className="block peer-checked:hidden bg-gray-500 p-2 rounded-full  cursor-pointer ">
+              <label htmlFor='tailwind' className="relative group block peer-checked:hidden bg-gray-500 p-2 rounded-full  cursor-pointer ">
                 <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
                     style={{ fill: '#ffffff' }} />
                 </svg>
+                <Tooltip text={'Tailwind (Disabled)'} />
               </label>
             </div>
             &nbsp;|&nbsp;
             <div>
               <input id="react" type="checkbox" checked={isReactChecked} onChange={handleReactChange} className="peer hidden" />
-              <label htmlFor='react' className="hidden cursor-pointer peer-checked:block bg-gray-700 p-2 rounded-full">
+              <label htmlFor='react' className="relative group hidden cursor-pointer peer-checked:block bg-gray-700 p-2 rounded-full">
                 <IconReact fillcolor={'#61DBFB'} height={'20px'} width={'20px'} />
+                <Tooltip text={'React (Enabled)'} />
               </label>
-              <label htmlFor='react' className="block peer-checked:hidden bg-blue-800/50 p-2 rounded-full  cursor-pointer ">
+              <label htmlFor='react' className="relative group block peer-checked:hidden bg-blue-800/50 p-2 rounded-full  cursor-pointer ">
                 <IconReact fillcolor={'#ffffff'} height={'20px'} width={'20px'} />
+                <Tooltip text={'React (Disabled)'} />
               </label>
             </div>
           </div>
