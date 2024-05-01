@@ -1,6 +1,8 @@
 # CodeLekhan (Online Code Editor)
 This is a simple online code editor built using React, Monaco Editor, and JSZip. It allows users to write HTML, CSS, Tailwind, JavaScript, and ReactJS code and see the live output in an iframe. Additionally, users can download their code files as a ZIP archive.
 
+![Website Image](https://github.com/AzadNishad/Code-Lekhan/blob/main/public/img/ScreenshotHome.png?raw=true)
+
 ## Features
 - Edit HTML, CSS, and JavaScript code in real-time.
 - Code with Tailwind And ReactJS as well.
